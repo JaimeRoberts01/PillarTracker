@@ -19,23 +19,23 @@
                         <HBox alignment="CENTER" layoutX="562.0" layoutY="21.0">
                            <children>
                               <TextField fx:id="textfiled_unit_pixel" layoutX="542.0" layoutY="8.0" prefHeight="25.0" prefWidth="61.0" style="-fx-font-size: 12px;" />
-                              <Label layoutX="603.0" layoutY="12.0" style="-fx-font-size: 12px;" text="pixel" />
+                              <Label layoutX="603.0" layoutY="12.0" style="-fx-font-size: 12px;" text=" pixel" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" layoutX="336.0" layoutY="21.0">
                            <children>
                               <TextField fx:id="textfiled_unit_nm" layoutX="336.0" layoutY="8.0" prefHeight="25.0" prefWidth="57.0" style="-fx-font-size: 12px;" />
-                              <Label layoutX="395.0" layoutY="12.0" style="-fx-font-size: 12px;" text="nm" />
+                              <Label layoutX="395.0" layoutY="12.0" style="-fx-font-size: 12px;" text=" nm" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" layoutX="14.0" layoutY="21.0">
                            <children>
-                              <Label layoutX="19.0" layoutY="12.0" style="-fx-font-size: 12px;" text="Pixel Size (nm):" />
+                              <Label layoutX="19.0" layoutY="12.0" style="-fx-font-size: 12px;" text="Pixel Size (nm): " />
                               <TextField fx:id="textfiled_pixel_size" layoutX="103.0" layoutY="8.0" prefHeight="25.0" prefWidth="89.0" style="-fx-font-size: 12px;" />
                            </children>
                         </HBox>
                         <Separator layoutX="14.0" layoutY="54.0" prefHeight="7.0" prefWidth="644.0" />
-                        <Button fx:id="button_pillar_detection" layoutX="216.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleButtonDetection" prefHeight="30.0" prefWidth="225.0" style="-fx-font-size: 12px;" text="Fast Detect Pillar">
+                        <Button fx:id="button_pillar_detection" layoutX="210.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleButtonDetection" prefHeight="30.0" prefWidth="250.0" style="-fx-font-size: 12px;" text="Fast Detect Pillar">
                            <contextMenu>
                               <ContextMenu>
                                 <items>
@@ -60,7 +60,7 @@
                         <GridPane alignment="CENTER_LEFT" layoutX="44.0" layoutY="73.0" prefHeight="198.0" prefWidth="568.0">
                           <columnConstraints>
                             <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="175.0" minWidth="10.0" prefWidth="175.0" />
-                            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="149.0" minWidth="10.0" prefWidth="78.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="149.0" minWidth="10.0" prefWidth="120.0" />
                               <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="175.0" minWidth="10.0" prefWidth="155.0" />
                               <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="162.0" minWidth="10.0" prefWidth="144.0" />
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="6.0" prefWidth="16.0" />
@@ -73,29 +73,31 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
-                           <children>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Pillar Spacing (Pixel):" />
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Grid Oblique (degree):" GridPane.rowIndex="1" />
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Grid Angle (degree):" GridPane.rowIndex="2" />
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Pillar Diameter (Pixel):" GridPane.rowIndex="4" />
+                           <children>                              
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Pillar Spacing (Pixel): " />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Pillar Diameter (Pixel): " GridPane.rowIndex="1" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Grid Oblique (degree): " GridPane.rowIndex="2" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Grid Angle (degree): " GridPane.rowIndex="3" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Gaussian Sigma (Pixel): " GridPane.rowIndex="4" />
+                              
                               <TextField fx:id="textfiled_spacing" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" />
-                              <TextField fx:id="textfiled_grid_oblique" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="textfiled_grid_angle" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <TextField fx:id="textfiled_diameter" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <TextField fx:id="textfiled_gauss_sigma" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <Button fx:id="button_FFT" mnemonicParsing="false" onAction="#handleButtonFFT" prefHeight="25.0" prefWidth="145.0" style="-fx-font-size: 12px;" text="FFT / Inverse FFT" GridPane.columnIndex="2" />
-                              <Button fx:id="button_preview_grid" mnemonicParsing="false" onAction="#handleButtonPreviewGrid" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Preview Grid" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                              <Button fx:id="button_remove_overlays" mnemonicParsing="false" onAction="#handleButtonRemoveOverlays" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Remove Overlay" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                              <CheckBox fx:id="checkbox_square_grid" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Is Square Grid?" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                              <Button fx:id="testButton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Curve Fit" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="150.0" style="-fx-font-size: 12px;" text="Gaussian Sigma (Pixel):" GridPane.rowIndex="3" />
-                              <CheckBox fx:id="checkbox_dark_pillar" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Is Dark Pillar?   " GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                              <Button fx:id="button_extract_PSF" mnemonicParsing="false" onAction="#handleButtonExtactPSF" prefHeight="25.0" prefWidth="145.0" style="-fx-font-size: 12px;" text="Extract Kernel" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                              <Button fx:id="button_cross_correlation" mnemonicParsing="false" onAction="#handleButtonCrossCorrelation" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Enhance Image" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <TextField fx:id="textfiled_diameter" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />   
+                              <TextField fx:id="textfiled_grid_oblique" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="textfiled_grid_angle" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="textfiled_gauss_sigma" prefHeight="25.0" prefWidth="99.0" style="-fx-font-size: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              
+                              <Button fx:id="button_FFT" mnemonicParsing="false" onAction="#handleButtonFFT" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="FFT / Inverse FFT" GridPane.columnIndex="2" />
+                              <Button fx:id="button_preview_grid" mnemonicParsing="false" onAction="#handleButtonPreviewGrid" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Preview Grid" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Button fx:id="button_remove_overlays" mnemonicParsing="false" onAction="#handleButtonRemoveOverlays" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Remove Overlay" GridPane.columnIndex="3" />
+                              <CheckBox fx:id="checkbox_square_grid" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Is Square Grid?" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Button fx:id="testButton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Curve Fit" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <CheckBox fx:id="checkbox_dark_pillar" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Is Dark Pillar?          " GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Button fx:id="button_extract_PSF" mnemonicParsing="false" onAction="#handleButtonExtactPSF" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Extract Kernel" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Button fx:id="button_cross_correlation" mnemonicParsing="false" onAction="#handleButtonCrossCorrelation" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Enhance Image" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                               <Button fx:id="button_set_PSF" mnemonicParsing="false" onAction="#handleButtonSetKenel" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Set Kernel" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                              <CheckBox fx:id="checkbox_apply_enhancement" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Apply Kernel?" textAlignment="JUSTIFY" GridPane.rowIndex="5" />
-                              <Button fx:id="button_show_current_kernel" mnemonicParsing="false" onAction="#handleButtonShowCurrentKernel" prefHeight="25.0" prefWidth="146.0" style="-fx-font-size: 12px;" text="Show Current Kernel" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                              <Button mnemonicParsing="false" onAction="#handleButtonSetMaskHighPass" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Set Mask in FD" GridPane.columnIndex="3">
+                              <CheckBox fx:id="checkbox_apply_enhancement" mnemonicParsing="false" style="-fx-font-size: 12px;" text="Apply Kernel?          " GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <Button fx:id="button_show_current_kernel" mnemonicParsing="false" onAction="#handleButtonShowCurrentKernel" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Show Current Kernel" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Button mnemonicParsing="false" onAction="#handleButtonSetMaskHighPass" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Set Mask in FD" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <contextMenu>
                                     <ContextMenu>
                                        <items>
@@ -103,7 +105,7 @@
                                        </items>
                                     </ContextMenu>
                                  </contextMenu></Button>
-                              <Button mnemonicParsing="false" onAction="#handleButtonHighPassFFT" prefHeight="25.0" prefWidth="145.0" style="-fx-font-size: 12px;" text="Mask Filter in FD" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#handleButtonHighPassFFT" prefHeight="25.0" prefWidth="134.0" style="-fx-font-size: 12px;" text="Mask Filter in FD" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
                         <CheckBox fx:id="checkbox_show_current_kernel" layoutX="74.0" layoutY="294.0" mnemonicParsing="false" text="Show Current Kernel?" visible="false" />
