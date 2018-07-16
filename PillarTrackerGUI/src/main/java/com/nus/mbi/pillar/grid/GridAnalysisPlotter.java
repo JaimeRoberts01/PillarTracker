@@ -88,7 +88,7 @@ public class GridAnalysisPlotter {
                 arrow.setHeadSize(arrow_head_size); 
                 arrow.setStrokeWidth(1);
                 //arrow.setStyle(Arrow.OPEN);
-                arrow.setFillColor(arrow_color);
+                arrow.setFillColor(arrow_color); // THIS IS FOR THE ARROW HEAD SIZE
                 arrow.setStyle("OPEN");
                 overlay.add(arrow);
             }
@@ -389,11 +389,11 @@ final static class GridIJ {
         int iymin = find_min(iy, is_labeled);
         int iymax = find_max(iy, is_labeled);
 
-//        int xdim = ixmax - ixmin + 1;
-//        int ydim = iymax - iymin + 1;
+//        int xdim = ixmax - ixmin + 1; 
+//        int ydim = iymax - iymin + 1; 
         
         int npillars = is_labeled.length;
-        //%% polyfit along x axis
+        //%% polyfit along x axis 
         for(int ixx=ixmin; ixx<=ixmax; ixx++){            
             List<GridLinePoints> points = new ArrayList();
             for(int i=0; i<npillars; i++){               
